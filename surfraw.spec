@@ -2,7 +2,7 @@ Summary:	Shell Users Revolutionary Front Rage Against the Web
 Summary(pl):	SURFRAW - rewolucyjny front u¿ytkowników shellowych przeciwko WWW
 Name:		surfraw
 Version:	1.0.7
-Release:	2
+Release:	3
 License:	public domain
 Group:		Applications/Console
 Source0:	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/%{name}-%{version}.tar.gz
@@ -72,4 +72,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README AUTHORS HACKING TODO NEWS COPYING
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/%{name}*
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}*
