@@ -3,7 +3,7 @@ Summary(pl):	SURFRAW - rewolucyjny front u¿ytkowników shellowych przeciwko WWW
 Name:		surfraw
 Version:	1.0.7
 Release:	3
-License:	public domain
+License:	Public Domain
 Group:		Applications/Console
 Source0:	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/%{name}-%{version}.tar.gz
 # Source0-md5:	0957382bbdebf3d678879fa5d2592c9d
