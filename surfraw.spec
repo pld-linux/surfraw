@@ -37,7 +37,7 @@ popularnych silników wyszukiwarek WWW i innych artefaktów si³y. Czy¶ci
 serwisy google, altavista, dejanews, freshmeat, research index,
 slashdot oraz wiele innych od fa³szywych, nawiedzonych zaraz± terenów
 formularzy HTML, umieszczaj±c te dziwy tam, gdzie ich miejsce - g³êboko
-w wewnêtrznych krainach uniksa, tak jak rozszerzenia pow³oki.
+w wewnêtrznych krainach Uniksa, tak jak rozszerzenia pow³oki.
 
 Surfraw absrahuje przegl±darkê od wej¶cia, co pozwala jej otrzymaæ to,
 w czym jest dobra - przegl±danie. Interpretowanie formularzy
