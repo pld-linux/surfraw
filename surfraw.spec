@@ -1,8 +1,8 @@
 Summary:	Shell Users Revolutionary Front Rage Against the Web
 Name:		surfraw
 Version:	1.0.7
-Release:	1
-License:	GPL
+Release:	2
+License:	public domain
 Group:		Applications/Console
 Source0:	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/%{name}-%{version}.tar.gz
 # Source0-md5:	0957382bbdebf3d678879fa5d2592c9d
@@ -43,13 +43,14 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc ChangeLog README AUTHORS HACKING TODO NEWS COPYING
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/%{name}*
