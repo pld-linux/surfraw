@@ -6,8 +6,10 @@ License:	GPL
 Group:		Applications/Console
 Source0:	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/%{name}-%{version}.tar.gz
 # Source0-md5:	0957382bbdebf3d678879fa5d2592c9d
+Patch0:		%{name}-autoconf.patch
 URL:		http://surfraw.sourceforge.net/
 Requires:	webclient
+Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,6 +30,7 @@ with fear and wonder.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
