@@ -1,4 +1,5 @@
 Summary:	Shell Users Revolutionary Front Rage Against the Web
+Summary(pl):	SURFRAW - rewolucyjny front u¿ytkowników shellowych przeciwko WWW
 Name:		surfraw
 Version:	1.0.7
 Release:	2
@@ -8,8 +9,10 @@ Source0:	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/%{name}-%{version}.tar.gz
 # Source0-md5:	0957382bbdebf3d678879fa5d2592c9d
 Patch0:		%{name}-autoconf.patch
 URL:		http://surfraw.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 Requires:	webclient
-Buildarch:	noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,6 +30,22 @@ good at. Combined with incremental text browsers, such as links, w3m
 (or even lynx), and screen(1), or netscape-remote a Surfraw liberateur
 is capable of research speeds that leave GUI tainted idolaters agape
 with fear and wonder.
+
+%description -l pl
+Surfraw udostêpnia szybki interfejs z uniksowej linii poleceñ do wielu
+popularnych silników wyszukiwarek WWW i innych artefaktów si³y. Czy¶ci
+serwisy google, altavista, dejanews, freshmeat, research index,
+slashdot oraz wiele innych od fa³szywych, nawiedzonych zaraz± terenów
+formularzy HTML, umieszczaj±c te dziwy tam, gdzie ich miejsce - g³êboko
+w wewnêtrznych krainach uniksa, tak jak rozszerzenia pow³oki.
+
+Surfraw absrahuje przegl±darkê od wej¶cia, co pozwala jej otrzymaæ to,
+w czym jest dobra - przegl±danie. Interpretowanie formularzy
+jêzykowych jest obs³ugiwane przez pow³okê. W po³±czeniu z
+przyrostowymi przegl±darkami tekstowymi, takimi jak links, w3m (czy
+nawet lynx) oraz screenem, lub netscape-remote wyzwoleniec Surfraw
+mo¿e wyszukiwaæ z prêdko¶ciami pozostawiaj±cymi napiêtnowanych
+heretyków u¿ywaj±cych GUI w strachu i zw±tpieniu.
 
 %prep
 %setup -q
