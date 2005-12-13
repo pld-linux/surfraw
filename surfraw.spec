@@ -72,4 +72,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README AUTHORS HACKING TODO NEWS COPYING
 %attr(755,root,root) %{_bindir}/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}*
