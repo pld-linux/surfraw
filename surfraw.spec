@@ -1,5 +1,5 @@
 Summary:	Shell Users Revolutionary Front Rage Against the Web
-Summary(pl.UTF-8):   SURFRAW - rewolucyjny front użytkowników shellowych przeciwko WWW
+Summary(pl.UTF-8):	SURFRAW - rewolucyjny front użytkowników shellowych przeciwko WWW
 Name:		surfraw
 Version:	1.0.7
 Release:	3
