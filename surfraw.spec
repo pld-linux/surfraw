@@ -1,5 +1,5 @@
 Summary:	Shell Users Revolutionary Front Rage Against the Web
-Summary(pl):	SURFRAW - rewolucyjny front u¿ytkowników shellowych przeciwko WWW
+Summary(pl.UTF-8):   SURFRAW - rewolucyjny front uÅ¼ytkownikÃ³w shellowych przeciwko WWW
 Name:		surfraw
 Version:	1.0.7
 Release:	3
@@ -31,21 +31,21 @@ good at. Combined with incremental text browsers, such as links, w3m
 is capable of research speeds that leave GUI tainted idolaters agape
 with fear and wonder.
 
-%description -l pl
-Surfraw udostêpnia szybki interfejs z uniksowej linii poleceñ do wielu
-popularnych silników wyszukiwarek WWW i innych artefaktów si³y. Czy¶ci
+%description -l pl.UTF-8
+Surfraw udostÄ™pnia szybki interfejs z uniksowej linii poleceÅ„ do wielu
+popularnych silnikÃ³w wyszukiwarek WWW i innych artefaktÃ³w siÅ‚y. CzyÅ›ci
 serwisy google, altavista, dejanews, freshmeat, research index,
-slashdot oraz wiele innych od fa³szywych, nawiedzonych zaraz± terenów
-formularzy HTML, umieszczaj±c te dziwy tam, gdzie ich miejsce - g³êboko
-w wewnêtrznych krainach Uniksa, tak jak rozszerzenia pow³oki.
+slashdot oraz wiele innych od faÅ‚szywych, nawiedzonych zarazÄ… terenÃ³w
+formularzy HTML, umieszczajÄ…c te dziwy tam, gdzie ich miejsce - gÅ‚Ä™boko
+w wewnÄ™trznych krainach Uniksa, tak jak rozszerzenia powÅ‚oki.
 
-Surfraw absrahuje przegl±darkê od wej¶cia, co pozwala jej otrzymaæ to,
-w czym jest dobra - przegl±danie. Interpretowanie formularzy
-jêzykowych jest obs³ugiwane przez pow³okê. W po³±czeniu z
-przyrostowymi przegl±darkami tekstowymi, takimi jak links, w3m (czy
+Surfraw absrahuje przeglÄ…darkÄ™ od wejÅ›cia, co pozwala jej otrzymaÄ‡ to,
+w czym jest dobra - przeglÄ…danie. Interpretowanie formularzy
+jÄ™zykowych jest obsÅ‚ugiwane przez powÅ‚okÄ™. W poÅ‚Ä…czeniu z
+przyrostowymi przeglÄ…darkami tekstowymi, takimi jak links, w3m (czy
 nawet lynx) oraz screenem, lub netscape-remote wyzwoleniec Surfraw
-mo¿e wyszukiwaæ z prêdko¶ciami pozostawiaj±cymi napiêtnowanych
-heretyków u¿ywaj±cych GUI w strachu i zw±tpieniu.
+moÅ¼e wyszukiwaÄ‡ z prÄ™dkoÅ›ciami pozostawiajÄ…cymi napiÄ™tnowanych
+heretykÃ³w uÅ¼ywajÄ…cych GUI w strachu i zwÄ…tpieniu.
 
 %prep
 %setup -q
