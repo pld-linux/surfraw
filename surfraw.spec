@@ -16,11 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Surfraw provides a fast unix command line interface to a variety of
+Surfraw provides a fast Unix command line interface to a variety of
 popular WWW search engines and other artifacts of power. It reclaims
 google, altavista, dejanews, freshmeat, research index, slashdot and
 many others from the false-prophet, pox-infested heathen lands of
-html-forms, placing these wonders where they belong, deep in unix
+html-forms, placing these wonders where they belong, deep in Unix
 heartland, as god loving extensions to the shell.
 
 Surfraw abstracts the browser away from input. Doing so lets it get on
