@@ -1,14 +1,14 @@
 Summary:	Shell Users Revolutionary Front Rage Against the Web
 Summary(pl.UTF-8):	SURFRAW - rewolucyjny front użytkowników shellowych przeciwko WWW
 Name:		surfraw
-Version:	1.0.7
-Release:	3
+Version:	2.2.7
+Release:	1
 License:	Public Domain
 Group:		Applications/Console
-Source0:	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/%{name}-%{version}.tar.gz
-# Source0-md5:	0957382bbdebf3d678879fa5d2592c9d
-Patch0:		%{name}-autoconf.patch
-URL:		http://surfraw.sourceforge.net/
+Source0:	http://surfraw.alioth.debian.org/dist/%{name}-%{version}.tar.gz
+# Source0-md5:	213010e9b7c8478827e8903530cf7787
+URL:		http://surfraw.alioth.debian.org/
+Patch0:		%{name}-gzlinks.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 Requires:	webclient
@@ -49,7 +49,7 @@ heretyków używających GUI w strachu i zwątpieniu.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch0 -p0
 
 %build
 rm -f missing
@@ -72,4 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README AUTHORS HACKING TODO NEWS COPYING
 %attr(755,root,root) %{_bindir}/*
-%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}*
+%dir %{_libdir}/%{name}
+%attr(755,root,root) %{_libdir}/%{name}/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/xdg/%{name}
+%{_mandir}/man1/*.1*
