@@ -1,3 +1,5 @@
+%define _libdir %{_prefix}/lib
+
 Summary:	Shell Users Revolutionary Front Rage Against the Web
 Summary(pl.UTF-8):	SURFRAW - rewolucyjny front użytkowników shellowych przeciwko WWW
 Name:		surfraw
@@ -36,8 +38,8 @@ Surfraw udostępnia szybki interfejs z uniksowej linii poleceń do wielu
 popularnych silników wyszukiwarek WWW i innych artefaktów siły. Czyści
 serwisy google, altavista, dejanews, freshmeat, research index,
 slashdot oraz wiele innych od fałszywych, nawiedzonych zarazą terenów
-formularzy HTML, umieszczając te dziwy tam, gdzie ich miejsce - głęboko
-w wewnętrznych krainach Uniksa, tak jak rozszerzenia powłoki.
+formularzy HTML, umieszczając te dziwy tam, gdzie ich miejsce -
+głęboko w wewnętrznych krainach Uniksa, tak jak rozszerzenia powłoki.
 
 Surfraw absrahuje przeglądarkę od wejścia, co pozwala jej otrzymać to,
 w czym jest dobra - przeglądanie. Interpretowanie formularzy
@@ -56,7 +58,7 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure --libdir=%{_prefix}/lib
+%configure
 %{__make}
 
 %install
@@ -72,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README AUTHORS HACKING TODO NEWS COPYING
 %attr(755,root,root) %{_bindir}/*
-%dir %{_prefix}/lib/%{name}
-%attr(755,root,root) %{_prefix}/lib/%{name}/*
+%dir %{_libdir}/%{name}
+%attr(755,root,root) %{_libdir}/%{name}/*
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/xdg/%{name}
 %{_mandir}/man1/*.1*
