@@ -4,7 +4,7 @@ Summary:	Shell Users Revolutionary Front Rage Against the Web
 Summary(pl.UTF-8):	SURFRAW - rewolucyjny front użytkowników shellowych przeciwko WWW
 Name:		surfraw
 Version:	2.2.7
-Release:	2
+Release:	3
 License:	Public Domain
 Group:		Applications/Console
 Source0:	http://surfraw.alioth.debian.org/dist/%{name}-%{version}.tar.gz
